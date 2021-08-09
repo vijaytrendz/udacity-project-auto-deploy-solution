@@ -80,6 +80,7 @@ jobs:
     steps:
       - checkout
       - run: npm audit --audit-level=critical --prefix backend --force
+      - run: npm audit fix
 
   analyze_frontend:
     docker:
